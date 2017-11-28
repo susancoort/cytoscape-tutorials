@@ -1,67 +1,56 @@
 <section>
-<h1>Network extension - CyTargetlinker app</h1>
+<h1>Network extension - CyTargetLinker app</h1>
 Network extension with various interaction types using the Cytoscape app - CyTargetLinker
 </section>
 <section id='frag-list'>
 <h2>Outline</h2>
 <ul>
-	<li>Goal</li>
-	<li class="fragment">CyTargLinker app</li>
+	<li>Goals</li>
+	<li class="fragment">CyTargLinker website</li>
+	<li class="fragment">CyTargLinker workflow</li>
 	<li class="fragment">RegINs</li>
-	<li class="fragment">RegIN creation</li>
 	<li class="fragment">Examples</li>
 </ul>
 </section>
+<section id='highlight'>
+<a href="#/headers"><ribbon>Goals</ribbon></a>
+CyTargetLinker provides a simple and extensive framework for biologists and bioinformaticians to integrate different <highlight>regulatory interactions</highlight> into their network analysis approaches.
+Visualization options enable a <highlight>biological interpretation</highlight> of complex regulatory networks in a graphical manner.  
+</section> 
 <section id='list-image-cit'>
-<h3>List, Image and Citation</h3>
-<img style="float:right;width:55%" src="modules/template-b/genet-int-global-2010.png">
-<ul style="width:45%">
-	<li>Genetic interactions for the entire yeast genome.</li>
-	<li>Synthetic lethal screen of 1712 genes: 170,000 interactions.</li>
-	<li>Visualization of clustering within and between functional groups annotated by GO.</li>
-	<li>Predict functions and identify regulatory subnetworks.</li>
-</ul>
-<br /><small style="margin-top:40px;">Costanzo (2010) The genetic landscape of a cell. <em>Science</em>, 22, Fig. 1</small>
+<h3>CyTargerLinker website</h3>
+<img style="float:middle;width:55%" src="modules/cytargetlinker/Website_Cytargerlinker.jpg">
 </section>
-<section id='frag-list'>
-<h3>Animated List Elements</h3>
-<highlight>Network Analysis Basics</highlight>	
-<br />
-<ul>
-	<li>Topological properties</li>
-	<li class="fragment">Hubs and subnetworks</li>
-	<li class="fragment">Classify, cluster and diffuse</li>
-	<li class="fragment">Data integration</li>
-</ul>
-</section>
-<section id='two-columns'>
-<h3>Easy Two-Column Layout</h3>
-<div class="column">
-	<highlight>Networks are everywhere...</highlight>
-	<ul>
-		<li>Molecular networks</li>
-		<li>Cell-cell communication</li>
-		<li>Nervous systems</li>
-		<li>Social networks</li>
-	</ul>
-</div>
-<div class="column">
-	<highlight>Networks are tools...</highlight>
-	<ul>
-		<li>Reduce complexity</li>
-		<li>More efficient than tables</li>
-		<li>Great for data integration</li>
-		<li>Intuitive visualization</li>
-	</ul>
-</div> 
+<section id='list-image-cit'>
+<h3>CyTargerLinker workflow</h3>
+<img style="float:middle;width:55%" src="modules/cytargetlinker/CyTargetLinker workflow.png">
+<br /><small style="margin-top:40px;">Kutmon et al (2013) CyTargetLinker: a cytoscape app to integrate regulatory interactions in network analysis. <em>PLoS One</em></small>
 </section>
 <section id='table'>
-<h3>Basic Table Example</h3>
+<h3>RegINs</h3>
+RegINs = Regulatory Interaction Networks
 <table>
-	<th>Col 1</th><th>Col2</th><th>Col3</th>
-	<tr><td>data 1.1</td><td>data 1.2</td><td>data 1.3</td></tr>
-        <tr><td>data 2.1</td><td>data 2.2</td><td>data 2.3</td></tr>
-        <tr><td>data 3.1</td><td>data 3.2</td><td>data 3.3</td></tr>
-        <tr><td>data 4.1</td><td>data 4.2</td><td>data 4.3</td></tr>
+	<th>Databasse</th><th>Interaction types</th>
+	<tr><td>miRTarBase</td><td>microRNA-target interactions</td></tr>
+        <tr><td>Drugbank</td><td>drug-target interactions</td></tr>
+        <tr><td>TransmiR</td><td>transcription factor-microRNA interactions</td></tr>
+        <tr><td>miRBase</td><td>primary transcript-microRNA interactions</td></tr>
 </table>
+</section>
+<section id='list-image-cit'>
+<h3>Examples - microRNAs</h3>
+<img style="float:middle;width:55%" src="modules/cytargetlinker/CyTargetLinker workflow.png">
+</section>
+<section id='list-image-cit'>
+<h3>Examples - Vitamin D3-microRNA network</h3>
+<ul>
+	<li>MicroRNA–target interactions from TargetScan and miRTarBase were added.</li>
+	<li>6 out of 9 differentially expressed microRNAs in VitD3-treated cancer cells present.</li>  
+	<li>Those six up-regulated microRNAs are highlighted as green rounded rectangles.</li> 
+	<li>Together they target 96 gene products present in pathways.</li> 
+	<li>Up-regulated genes are coloured in red, and down-regulated genes are coloured in blue.</li> 
+	<li>The edge colour indicates the source.</li> 
+</ul> 
+<img style="float:right;width:55%" src="modules/cytargetlinker/VitD-microRNA_network.jpg">
+<br /><small style="margin-top:40px;">Kutmon et al (2015) Integrative network-based analysis of mRNA-microRNA expression in 1,25-dihydroxyvitamin D3-treated cancer cells. <em>Genes Nutr.</em></small>
 </section>
