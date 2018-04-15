@@ -3,19 +3,44 @@
 	Extend a set of microRNAs with regulatory information
 </section>
 <section>
-<h1>Description</h1>
+<h1>Introduction</h1>
 CyTargetLinker provides a quick and extensive enrichment of biological networks in Cytoscape. The visualization options allow biological interpretation of complex regulatory networks in a graphical way.
 
-In this tutorial a step-by-step explanation is given on how to extend a list of microRNAs with predicted and validated microRNA-target interactions (MTIs). (Note that in this tutorial the Cytoscape version 2.8.3 is used.)
+In this tutorial a step-by-step explanation is given on how to extend a list of microRNAs with predicted and validated microRNA-target interactions (MTIs).
+
+<div class="cytargetlinker">
+    <p>The tutorial is designed to run as a demo in the CyTargetLinker app, with interactive buttons for each task.</p>
+</div>
 </section>
+
+
+<section>
+<h3>Loading microRNAs</h3>
+		<div class="cybrowser">
+			<ul>
+				<div style="width:40%;float:right; margin-left: 10px">
+					<img src="microRNA-network.png">
+				</div>
+				<li>Start Cytoscape and load the demo session.</li>
+				<input type="button" class="btn btn-primary" onclick="cybrowser.executeCyCommand('network load url url=https://raw.githubusercontent.com/cytoscape/cytoscape-tutorials/gh-pages/cytoscape-tutorials/protocols/modules/CTL_tutorial1/microRNA.xgmml);" value="Load network"/>
+				<li>When the network first opens, the entire network is not visible because of the default zoom factor used. To see the whole network, we can use the <b>Fit Content</b> function.</li>
+				<input type="button" class="btn btn-primary" onclick="cybrowser.executeCyCommand('view fit content');" value="Fit content"/>
+									
+				<li>You should now see the network on the right.</li>
+			</ul>
+</section>
+C:\Users\Administrator\Documents\GitHub\cytoscape-tutorials\protocols\modules\CTL_tutorial1\microRNA.xgmml
+
+
+
 <section>
 <h1>Step 1: Import a set of microRNAs into Cytoscape</h1>
-<img style="float:right;width:55%" src="modules/template-b/genet-int-global-2010.png">
+<img style="float:right;width:55%" src="modules/CTL_Tutorial1/microRNA-network.png">
 <ul style="width:45%">
 	<li>First you will need to create a biological network in Cytoscape containing your microRNAs of interest.</li>
 	<li>The datafile should contain at least two columns, (i) the microRNA name and (ii) the corresponding miRBase accession number.</li>
-	<li>An example datafile, in which two microRNAs known to be involved in obesity are listed, can be found here.</li>
-	<li>Open the datafile containing the microRNAs in Cytoscape via File  Import  Network from Table (Text/ MS Excel).</li>
+	<li>An example datafile, in which two microRNAs known to be involved in obesity are listed, can be found 'here url=http://projects.bigcat.unimaas.nl/data/cytargetlinker/resources/microRNAs.xlsx'.</li>
+	<li>Open the datafile containing the microRNAs in Cytoscape via File -> Import -> Network ->File.</li>
 	<li>In the panel you should select a file locally, select the column with microRNA names as the source interaction and transfer the header of the column as attribute names, as shown in Figure 1..</li>
 </ul>
 </section>
