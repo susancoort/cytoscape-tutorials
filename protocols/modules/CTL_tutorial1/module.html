@@ -38,23 +38,72 @@ The resulting biological network of two microRNAs from the example data, as show
 </section>
 <section>
 <h1>Step 2b: Download the microRNA-target gene linkset</h1>
+<img style="float:right;width:50%" src="modules/CTL_Tutorial1/CTL_Linksets.jpg">
 <ul style="width:45%">
-	<li>Before starting CyTargetLinker you need to download the linksets <a href="https://projects.bigcat.unimaas.nl/cytargetlinker/linksets/"  linksets>here</a> </li> and store them in a directory</li>
+	<li>Before starting CyTargetLinker you need to download the linksets <a href="https://projects.bigcat.unimaas.nl/cytargetlinker/linksets/"  linksets>here</a> and store them in a directory</li>
 	<li>The linksets provided on the CyTargetLinker website are species-specific</li> 
 	<li>In this tutorial the human linksets are needed. Download Homo Sapiens collection</li>
-<img style="float:right;width:50%" src="modules/CTL_Tutorial1/CTL_Linksets.jpg">
 </ul
 </section>
 <section>
-<h1>Step 3: Built regulatory network in Cytoscape</h1>
-
+<h1>Step 3a: Built regulatory network in Cytoscape</h1>
+<img style="float:right;width:50%" src="modules/CTL_Tutorial1/CTL_Display-panel.jpg">
+<ul style="width:45%">
+	<li>Install the CyTargetLinker app via the app manager in Cytoscape version 3.0 and higher</li>
+	<li>Open the CyTargetLinker in Cytoscape via Apps -> CyTargetLinker -> Extend network</li>
+	<li>Thereafter the CyTargetLinker selection panel is displayed </li>
+	
+	<li> 1. Select the user network. This is the biological network you want to extend with regulatory information. Here we select the human microRNAs.</li>
+	<li> 2. Select the network attribute. This is the column containing the identifier which is supported by CyTargetLinker. The supported identifiers are listed in overview of the linksets a href="https://projects.bigcat.unimaas.nl/cytargetlinker/linksets/regins-mirtarbase/"  linksets>here</a> . For the microRNAs we recommend to use the miRBase accession numbers.</li>
+	<li> 3. Select the directory containing the species specific linksets which you downloaded in step 2b.</li>
+	<li> 4. Select the direction of the interaction. The user can decide how he wants to extend the network, i.e., a) add targets,  b) add sources or  3) both (default). Here we add only the targets of the microRNAs.</li>
+</ul>	
 </section>
 <section>
-<h1>Step 4: Adapt visualization options</h1>
-Install the CyTargetLinker app via the app manager in Cytoscape version 3.0 and higher
+<h1>Step 3b: Built regulatory network in Cytoscape</h1>
+<img style="float:right;width:50%" src="modules/CTL_Tutorial1/Select_MTIs.jpg">
+<ul style="width:45%">
+	<li>Click ok en thereafter select the RINs containing microRNA-target information</li> 
+	<li>In this case we have three resources containing microRNA-target interactions, i.e., microCosm, miRTarBase and TargetScan </li>
+</ul>	
+</section>
+<section>
+<h1>Step 3c: Regulatory network in Cytoscape</h1>
+<img style="float:right;width:50%" src="modules/CTL_Tutorial1/Resulting_extended_network.jpg">
+<ul style="width:45%">
+	<li>The extended network is now visualized in a new Cytoscape network</li>
+	<li>To visualize the microRNA names and gene names in the network go to View -> Show Graphical Details</li>
+	<li>In the network microRNAs and target genes are defined as grey circles and pink hexagons, respectively</li> 
+	<li>To show the CyTargetLinker results panel go to Apps -> CyTargetLinker -> Show results panel</li>
+	<li>The predicted MTIs are visualized in red (microCosm: 1543) and blue (TargetScan: 2550) and the validated MTIs in purple (miRTarBase: 26), as shown in the results panel on the right hand site.</li> 
+	<li>The color of the edges can be adapted in the results panel by clicking on the color</li>
+</ul>
+</section>
+<section>
+<h1>Step 4a: Adapt visualization options</h1>
+The visualization options in CyTartgetLinker make is possible to investigate the regulatory network in more detail.
 
-Open the CyTargetLinker in Cytoscape via Apps -> CyTargetLinker and select Extend network. Thereafter the CyTargetLinker selection panel is displayed. 
+<h2>Hide and show functionality</h2>
+<img style="float:right;width:50%" src="modules/CTL_Tutorial1/Hide_predicted-MTIs.jpg">
+<ul style="width:45%">
+	<li>It is possible to hide or show specific linksets</li>
+	<li>Here we are interested in only the validated MTIs. Go to the results panel and hide the linksets containing predicted MTI, i.e., TargetScan and MicroCosm, by clicking on the dropdown menu.</li> 
+	<li>Now only the linksets from miRTarbase are shown in the network and the layout is immediately adapted</li>
+</ul>
+</section>
+<section>
+<h1>Step 4b: Adapt visualization options</h1>
+The visualization options in CyTartgetLinker make is possible to investigate the regulatory network in more detail.
 
+<h2>Threshold functionality</h2>
+<img style="float:right;width:50%" src="modules/CTL_Tutorial1/Hide_predicted-MTIs.jpg">
+<ul style="width:45%">
+	<li>It is possible to show interactions that are present in at least a specific number of linksets</li>
+	<li>Here we are interested in MTIs that are present in at least 2 linksets</li> 
+	<li>Go to the CyTargeLinker-panel, make sure all the linksets are shown, and set the overlap threshold to 2</li>
+	<li>Now the overlap between the linksets is shown and the layout is immediately adapted</li>
+	<li>Per linkset it is indicated first how many interactions are still present when applying a threshold of 2 and the second number represent the total number of interactions were added to the original network</li>
+</ul>
 </section>
 <section id='highlight'>
 	<h3>The higlight tag</h3>
