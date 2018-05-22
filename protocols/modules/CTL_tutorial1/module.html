@@ -31,7 +31,8 @@ The resulting biological network of two microRNAs from the example data, as show
 	<li>The networks are stored in XGMML (the eXtensible Graph Markup and Modeling Language)format, which is supported by Cytoscape.</li> 
 	<li>Each interaction consists of two nodes, a source and target biomolecule, connected through one directed edge.</li>
 	<li>Several linkset for different species and interaction types are provided.<li>
-
+</ul>
+<ul>
 	<li>However CyTargetLinker is not limited to the provided linksets. A user can also create their own linksets.</li> 
 	<li>A detailed description on how to create your own linkset will soon be available as a tutorial.</li>
 </ul>
@@ -96,15 +97,20 @@ The visualization options in CyTartgetLinker make is possible to investigate the
 The visualization options in CyTartgetLinker make is possible to investigate the regulatory network in more detail.
 
 <h2>Threshold functionality</h2>
-<img style="float:right;width:50%" src="modules/CTL_Tutorial1/Hide_predicted-MTIs.jpg">
+<img style="float:right;width:50%" src="modules/CTL_Tutorial1/Threshold_MTIs.jpg">
 <ul style="width:45%">
 	<li>It is possible to show interactions that are present in at least a specific number of linksets</li>
 	<li>Here we are interested in MTIs that are present in at least 2 linksets</li> 
 	<li>Go to the CyTargeLinker-panel, make sure all the linksets are shown, and set the overlap threshold to 2</li>
-	<li>Now the overlap between the linksets is shown and the layout is immediately adapted</li>
+	<li>Now the overlap between the linksets is shown</li>
+	<li>To adapt the layout go to Layout -> Apply preferred layout</li>
 	<li>Per linkset it is indicated first how many interactions are still present when applying a threshold of 2 and the second number represent the total number of interactions were added to the original network</li>
 </ul>
 </section>
+
+
+
+
 <section id='highlight'>
 	<h3>The higlight tag</h3>
 	Use the highlight tag to get this <highlight>cool orange</highlight> accent color!
@@ -119,7 +125,5 @@ if (files != null) {
 }
 </code></pre>
 </section>
-<section>
-This is the end of this module. See, no more down option in the navigation. Now it's time to move on to the next slide by right arrow or spacebar
-</section>
+
 
